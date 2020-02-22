@@ -18,6 +18,7 @@ window.onload = function() {
 	map.setZoom(16)
 	map.panTo([ 26.336690,127.800430 ]) // Startup Lab Lagoon
 	map.addIcon(26.336690,127.800430,"Lagoon","icon/hanadojo.png",32)
+	map.on("click", (e) => alert(e.latlng))
 }
 
 </script>
